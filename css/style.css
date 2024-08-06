@@ -47,3 +47,76 @@ p {
     margin-top: 20px;
     width: 50%;
 }
+
+/* Общие стили для формы */
+form[name="upload"] {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 600px;
+    margin: 20px 0;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Стили для текстового поля */
+form[name="upload"] .form {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+/* Стили для текстовой области */
+form[name="upload"] textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    box-sizing: border-box;
+    resize: vertical; /* позволяет пользователям изменять размер только по вертикали */
+}
+
+/* Стили для кнопки загрузки файла */
+form[name="upload"] input[type="file"] {
+    margin-bottom: 15px;
+}
+
+/* Стили для кнопки отправки */
+form[name="upload"] .btn_red {
+    padding: 10px 20px;
+    background-color: #e74c3c;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    align-self: flex-start;
+}
+
+/* Эффект наведения для кнопки */
+form[name="upload"] .btn_red:hover {
+    background-color: #c0392b;
+}
+
+/* Дополнительные стили для улучшения внешнего вида */
+form[name="upload"] input::placeholder,
+form[name="upload"] textarea::placeholder {
+    color: #999;
+}
+
+form[name="upload"] input:focus,
+form[name="upload"] textarea:focus {
+    border-color: #66afe9;
+    outline: none;
+    box-shadow: 0 0 5px rgba(102, 175, 233, 0.6);
+}
